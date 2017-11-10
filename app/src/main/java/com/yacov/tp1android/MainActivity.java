@@ -101,6 +101,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void btnLimpar(View view){
+        nome.setText("");
+        telefone.setText("");
+        email.setText("");
+        cidade.setText("");
+
+        Mensagem("Campos apagados!");
+    }
+
 
     private void Mensagem(String msg){
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
